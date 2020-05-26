@@ -22,4 +22,9 @@ public class BookTest {
         assertEquals("Margaret Atwood", book.getAuthor());
     }
 
+    @Test
+    public void bookHasGenre() {
+        assertEquals("Speculative Fiction", book.getGenre());
+    }
+
 }
