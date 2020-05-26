@@ -1,15 +1,24 @@
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 public class LibraryTest {
 
     Library library;
-    BookClass book;
+    BookClass book2;
 
     @Before
     public void setUp(){
-        book = new BookClass('Danny, The Champion Of The World', 'Roald Dahl', 'Children')
+        book2 = new BookClass("Brave New World", "Aldous Huxley", "Sci-fi");
+        library = new Library();
+    }
+
+    @Test
+    public void libraryHasBooks() {
+        assertEquals(0, library.getNumberOfBooks());
     }
 
 }
