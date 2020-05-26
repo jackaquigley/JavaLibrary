@@ -13,7 +13,7 @@ public class LibraryTest {
     @Before
     public void setUp(){
         book2 = new BookClass("Brave New World", "Aldous Huxley", "Sci-fi");
-        library = new Library();
+        library = new Library(200);
     }
 
     @Test
@@ -25,6 +25,11 @@ public class LibraryTest {
     public void addBooks(){
         library.addBook(book2);
         assertEquals(1, library.getNumberOfBooks());
+    }
+
+    @Test
+    public void libraryHasCapacity(){
+        assertEquals(200, library.getCapacity());
     }
 
 }
