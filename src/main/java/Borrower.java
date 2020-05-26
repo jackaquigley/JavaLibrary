@@ -14,4 +14,8 @@ public class Borrower {
         return this.name;
     }
 
+    public int getNumberOfLoans(){
+        return this.loans.size();
+    }
+
 }

@@ -17,4 +17,9 @@ public class BorrowerTest {
         assertEquals("Jack", borrower.getName());
     }
 
+    @Test
+    public void borrowerHasLoans() {
+        assertEquals(0, borrower.getNumberOfLoans());
+    }
+
 }
